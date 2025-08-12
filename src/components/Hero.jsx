@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { Typewriter } from 'react-simple-typewriter'
 import resume from '../assets/sridhar_resume_aug(3).pdf'
+import profileImage from '../assets/sridhar_profile.png'
 
 export default function Hero(){
   const roles = [
@@ -80,7 +81,7 @@ export default function Hero(){
               className="w-64 h-64 mx-auto rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl"
             >
               <img 
-                src="src\assets\sridhar_profile.png" 
+                src={profileImage} 
                 alt="Konda Sridhar"
                 className="w-full h-full object-cover"
                 onError={(e) => {
